@@ -23,10 +23,14 @@ public class GameDirector : MonoBehaviour {
     public void DecreaseHp() {
 		this.hpGauge.GetComponent<Image> ().fillAmount -= damage;
 	}
+
     public void DecreaseTime(){
         this.timeGauge.GetComponent<Image>().fillAmount -= decreaseTimeSpeed;
         float currentTime = MaxTime * this.timeGauge.GetComponent<Image>().fillAmount;
         timeText.text = currentTime.ToString("F0");
+    }
+    public void MaxHp(){
+        this.hpGauge.GetComponent<Image>().fillAmount = 1;
     }
 
 }

@@ -291,7 +291,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowPrefab: {fileID: 1924293051274352, guid: ab16419d6d0064d2d87af60599811ca2,
     type: 2}
-  span: 0.5
+  arrowPrefab2: {fileID: 1481969558280632, guid: 9573bdc787c394e6592fa2303af0c80b,
+    type: 2}
+  span: 0.2
   ArrowRange: fbffffff05000000
   ArrowHeight: 4
 --- !u!4 &452490464
@@ -470,7 +472,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1121928914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 174, y: 41.5, z: 0}
+  m_LocalPosition: {x: 140, y: 41.5, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children:
   - {fileID: 1711383153}
@@ -843,7 +845,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1822252229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 224, y: 91.5, z: 0}
+  m_LocalPosition: {x: 190, y: 91.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1121928915}

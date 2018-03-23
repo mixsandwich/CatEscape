@@ -28,9 +28,17 @@ public class ArrowController2 : MonoBehaviour {
 
 
 		if(d < r1 + r2) {
+
 			// 監督スクリプトにプレイヤと衝突したことを伝える
 			GameObject director = GameObject.Find("GameDirector");
-			director.GetComponent<GameDirector>().DecreaseHp();
+            if (gameObject.tag == "arrow1")
+            {
+                director.GetComponent<GameDirector>().DecreaseHp();
+            }
+            if (gameObject.tag == "arrow2")
+            {
+                director.GetComponent<GameDirector>().MaxHp();
+            }
 
 			// 衝突した場合は矢を消す
 			Destroy(gameObject);
